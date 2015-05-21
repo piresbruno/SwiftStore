@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EB77F4C1B0D981F00F40D11 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB77F4B1B0D981F00F40D11 /* Tests.swift */; };
+		2EB77F561B0D9E9600F40D11 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB77F551B0D9E9600F40D11 /* SnapKit.framework */; };
 		2EDBEAF91B017A5A00998346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDBEAF81B017A5A00998346 /* AppDelegate.swift */; };
 		2EDBEAFB1B017A5A00998346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDBEAFA1B017A5A00998346 /* ViewController.swift */; };
-		2EDBEAFE1B017A5A00998346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDBEAFC1B017A5A00998346 /* Main.storyboard */; };
 		2EDBEB001B017A5A00998346 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDBEAFF1B017A5A00998346 /* Images.xcassets */; };
 		2EDBEB031B017A5A00998346 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDBEB011B017A5A00998346 /* LaunchScreen.xib */; };
 		2EDBEB0F1B017A5B00998346 /* SwiftStoreExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDBEB0E1B017A5B00998346 /* SwiftStoreExampleTests.swift */; };
@@ -42,11 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EB77F4B1B0D981F00F40D11 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		2EB77F551B0D9E9600F40D11 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		2EDBEAF31B017A5A00998346 /* SwiftStoreExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStoreExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDBEAF71B017A5A00998346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EDBEAF81B017A5A00998346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDBEAFA1B017A5A00998346 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2EDBEAFD1B017A5A00998346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EDBEAFF1B017A5A00998346 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2EDBEB021B017A5A00998346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2EDBEB081B017A5A00998346 /* SwiftStoreExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStoreExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB77F561B0D9E9600F40D11 /* SnapKit.framework in Frameworks */,
 				2EDBEB391B017C4C00998346 /* SwiftStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +81,7 @@
 		2EDBEAEA1B017A5A00998346 = {
 			isa = PBXGroup;
 			children = (
+				2EB77F551B0D9E9600F40D11 /* SnapKit.framework */,
 				2EDBEB271B017B4300998346 /* SwiftStore */,
 				2EDBEAF51B017A5A00998346 /* SwiftStoreExample */,
 				2EDBEB0B1B017A5A00998346 /* SwiftStoreExampleTests */,
@@ -100,10 +104,10 @@
 				2EDBEB3A1B017C9700998346 /* DB.swift */,
 				2EDBEAF81B017A5A00998346 /* AppDelegate.swift */,
 				2EDBEAFA1B017A5A00998346 /* ViewController.swift */,
-				2EDBEAFC1B017A5A00998346 /* Main.storyboard */,
 				2EDBEAFF1B017A5A00998346 /* Images.xcassets */,
 				2EDBEB011B017A5A00998346 /* LaunchScreen.xib */,
 				2EDBEAF61B017A5A00998346 /* Supporting Files */,
+				2EB77F4B1B0D981F00F40D11 /* Tests.swift */,
 			);
 			path = SwiftStoreExample;
 			sourceTree = "<group>";
@@ -160,6 +164,7 @@
 				2EDBEAEF1B017A5A00998346 /* Sources */,
 				2EDBEAF01B017A5A00998346 /* Frameworks */,
 				2EDBEAF11B017A5A00998346 /* Resources */,
+				2EB77F511B0D9E7000F40D11 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,7 +258,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EDBEAFE1B017A5A00998346 /* Main.storyboard in Resources */,
 				2EDBEB031B017A5A00998346 /* LaunchScreen.xib in Resources */,
 				2EDBEB001B017A5A00998346 /* Images.xcassets in Resources */,
 			);
@@ -268,12 +272,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EB77F511B0D9E7000F40D11 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2EDBEAEF1B017A5A00998346 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2EDBEAFB1B017A5A00998346 /* ViewController.swift in Sources */,
+				2EB77F4C1B0D981F00F40D11 /* Tests.swift in Sources */,
 				2EDBEAF91B017A5A00998346 /* AppDelegate.swift in Sources */,
 				2EDBEB3B1B017C9700998346 /* DB.swift in Sources */,
 			);
@@ -298,14 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2EDBEAFC1B017A5A00998346 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2EDBEAFD1B017A5A00998346 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2EDBEB011B017A5A00998346 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -404,6 +418,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftStoreExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +432,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftStoreExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

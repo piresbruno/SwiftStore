@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
-    DB.store["username"] = "mario"
+    self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
     
-    let username = DB.store["username"]
+    let vc = ViewController()
     
-    println(username)
+    window?.rootViewController = vc
     
     return true
   }
