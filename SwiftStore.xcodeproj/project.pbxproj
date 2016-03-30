@@ -238,6 +238,7 @@
 				2EAADF221AF6F94600783BAD /* Frameworks */,
 				2EAADF231AF6F94600783BAD /* Headers */,
 				2EAADF241AF6F94600783BAD /* Resources */,
+				2E48E84D1CAB5B89006164EA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -325,6 +326,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2E48E84D1CAB5B89006164EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Clone levelb\ngit clone https://github.com/google/leveldb leveldb_src\ncd leveldb_src\ngit checkout v1.18\nmake PLATFORM=IOS\n\n";
+		};
 		2EAADFAE1AF6FC6500783BAD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
