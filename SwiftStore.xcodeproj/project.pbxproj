@@ -42,7 +42,7 @@
 		2EAADF9F1AF6FA1F00783BAD /* write_batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EAADF911AF6FA1F00783BAD /* write_batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EAADFB01AF7086700783BAD /* SwiftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAADFAF1AF7086700783BAD /* SwiftStore.swift */; };
 		2EAADFC11AF797D500783BAD /* SwiftStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAADFC01AF797D500783BAD /* SwiftStoreTests.swift */; };
-		C7283DFE1D7F2047009F44FA /* libleveldb.a in Resources */ = {isa = PBXBuildFile; fileRef = C7283DFD1D7F2047009F44FA /* libleveldb.a */; };
+		C7283E091D7F2318009F44FA /* libleveldb.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7283DFD1D7F2047009F44FA /* libleveldb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +61,19 @@
 			remoteInfo = SwiftStore;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7283E081D7F230F009F44FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C7283E091D7F2318009F44FA /* libleveldb.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2EAADF261AF6F94600783BAD /* SwiftStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +264,7 @@
 				2EAADF221AF6F94600783BAD /* Frameworks */,
 				2EAADF231AF6F94600783BAD /* Headers */,
 				2EAADF241AF6F94600783BAD /* Resources */,
+				C7283E081D7F230F009F44FA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -327,7 +341,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7283DFE1D7F2047009F44FA /* libleveldb.a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
