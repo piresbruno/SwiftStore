@@ -23,6 +23,26 @@ class SwiftStoreTests: XCTestCase {
         super.setUp()
     }
   
+    
+    func testSwiftStore(){
+        
+        // Write value
+        store["username"] = "jondoe"
+        store["auth-token"] = "cdfsd1231sdf12321"
+        
+        // Get value
+        let username = store["username"]!
+        if !username.isEmpty {
+            print(username)
+        }
+        
+        let authToken = store["auth-token"]!
+        if !authToken.isEmpty {
+            print(authToken)
+        }
+    }
+    
+    
     func testWrites() {
         store["apple"] = "ball"
         for i in (0 ..< 1000) {
