@@ -42,7 +42,7 @@
 		2EAADF9F1AF6FA1F00783BAD /* write_batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EAADF911AF6FA1F00783BAD /* write_batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EAADFB01AF7086700783BAD /* SwiftStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAADFAF1AF7086700783BAD /* SwiftStore.swift */; };
 		2EAADFC11AF797D500783BAD /* SwiftStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAADFC01AF797D500783BAD /* SwiftStoreTests.swift */; };
-		C7283DFC1D7F155E009F44FA /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7283DFB1D7F155E009F44FA /* libleveldb.a */; };
+		C7283DFE1D7F2047009F44FA /* libleveldb.a in Resources */ = {isa = PBXBuildFile; fileRef = C7283DFD1D7F2047009F44FA /* libleveldb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +88,7 @@
 		2EAADFBD1AF7969D00783BAD /* SwiftStoreTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftStoreTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		2EAADFC01AF797D500783BAD /* SwiftStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStoreTests.swift; sourceTree = "<group>"; };
 		C7283DFB1D7F155E009F44FA /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libleveldb.a; path = leveldb/libleveldb.a; sourceTree = "<group>"; };
+		C7283DFD1D7F2047009F44FA /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libleveldb.a; path = ../libleveldb.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7283DFC1D7F155E009F44FA /* libleveldb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +179,7 @@
 		2EAADF821AF6FA1F00783BAD /* include */ = {
 			isa = PBXGroup;
 			children = (
+				C7283DFD1D7F2047009F44FA /* libleveldb.a */,
 				2EAADF831AF6FA1F00783BAD /* leveldb */,
 			);
 			path = include;
@@ -326,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7283DFE1D7F2047009F44FA /* libleveldb.a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
